@@ -1,33 +1,71 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background: #0f172a;
-    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    background: #1a0d14; /* dark pink background */
+    color: #fff;
     text-align: center;
 }
 
+/* Hero / Quote section */
 .hero {
-    padding: 100px;
-    background: #1e293b;
+    background: #ff4da6; /* bright pink */
+    color: white;
+    padding: 100px 20px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
+/* Section styling */
 section {
     padding: 40px;
 }
 
-input, textarea {
-    display: block;
-    width: 70%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+/* Headings */
+h2 {
+    color: #ff66b2; /* medium pink */
+    margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    background: #38bdf8;
+/* Box style (About, Skills, Contact) */
+section p, section ul, form {
+    background: #33001a; /* soft box pink */
+    padding: 20px;
+    border-radius: 12px;
+    width: 70%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(255, 102, 178, 0.5);
+}
+
+/* Skills list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+}
+
+/* Input fields */
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
     border: none;
-    color: black;
+    border-radius: 8px;
+}
+
+/* Button */
+button {
+    background: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+}
+
+/* Hover effect */
+button:hover {
+    background: #ff3385;
 }
