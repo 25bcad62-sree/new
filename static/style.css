@@ -114,3 +114,19 @@ section p:hover, section ul:hover, form:hover {
 html {
     scroll-behavior: smooth;
 }
+/* Center profile section */
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Make image circular */
+.profile-img {
+    width: 180px;        /* adjust size */
+    height: 180px;
+    border-radius: 50%;  /* makes it circle */
+    object-fit: cover;   /* keeps image proper */
+    display: block;
+    margin: 0 auto;      /* centers the image */
+    border: 4px solid #333; /* optional border */
+}
