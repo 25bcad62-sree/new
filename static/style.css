@@ -1,39 +1,39 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #1a0d14; /* dark pink background */
-    color: #fff;
+    background: #fdf6ec; /* cream */
+    color: #4b2e2e; /* dark chocolate text */
     text-align: center;
 }
 
-/* Hero / Quote section */
+/* Hero section */
 .hero {
-    background: #ff4da6; /* bright pink */
+    background: linear-gradient(135deg, #d4a373, #b08968); /* caramel gradient */
     color: white;
     padding: 100px 20px;
     font-size: 28px;
     font-weight: bold;
 }
 
-/* Section styling */
+/* Sections */
 section {
     padding: 40px;
 }
 
 /* Headings */
 h2 {
-    color: #ff66b2; /* medium pink */
+    color: #9c6644; /* warm caramel */
     margin-bottom: 20px;
 }
 
-/* Box style (About, Skills, Contact) */
+/* Boxes */
 section p, section ul, form {
-    background: #33001a; /* soft box pink */
+    background: #faedcd; /* soft beige */
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 15px;
     width: 70%;
     margin: auto;
-    box-shadow: 0 0 10px rgba(255, 102, 178, 0.5);
+    box-shadow: 0 6px 15px rgba(176, 137, 104, 0.4);
 }
 
 /* Skills list */
@@ -46,26 +46,71 @@ li {
     padding: 8px;
 }
 
-/* Input fields */
+/* Inputs */
 input, textarea {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid #ddb892;
+    border-radius: 10px;
+    background: #fffaf0;
 }
 
 /* Button */
 button {
-    background: #ff66b2;
+    background: #b08968; /* caramel */
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 /* Hover effect */
 button:hover {
-    background: #ff3385;
+    background: #9c6644; /* darker caramel */
+}
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Delay each section slightly */
+section:nth-child(1) { animation-delay: 0.2s; }
+section:nth-child(2) { animation-delay: 0.4s; }
+section:nth-child(3) { animation-delay: 0.6s; }
+section:nth-child(4) { animation-delay: 0.8s; }
+section:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+.profile-img {
+    transition: 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(200, 150, 100, 0.6);
+}
+section p, section ul, form {
+    transition: 0.3s;
+}
+
+section p:hover, section ul:hover, form:hover {
+    transform: translateY(-5px);
+}
+html {
+    scroll-behavior: smooth;
 }
