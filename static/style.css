@@ -122,8 +122,8 @@ html {
 
 /* Make image circular */
 .profile-img {
-    width: 180px;        /* adjust size */
-    height: 180px;
+    width: 220px;        /* adjust size */
+    height: 220px;
     border-radius: 50%;  /* makes it circle */
     object-fit: cover;   /* keeps image proper */
     display: block;
